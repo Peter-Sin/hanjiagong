@@ -1,0 +1,224 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="/Public/css/style.css" rel="stylesheet">
+    <link href="/Public/css/company.css" rel="stylesheet">
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/style.js"></script>
+    <title>龙子人力资源</title>
+</head>
+<body>
+<!--点击top回到顶部-->
+<div class="floatwindow">
+    <div class="top">
+        <img src="/Public/images/index_fanhuidingbu.png"/>
+    </div>
+    <div class="release">
+        <img src="/Public/images/index_fabu.png"/>
+    </div>
+</div>
+<!--占位用-->
+<div class="box"></div>
+<div class="index_header">
+    合作企业
+</div>
+<p id="sessionss" style="display:none;"><?php echo ($_SESSION['id']); ?></p>
+<div class="index_footer">
+    <ul class="clear">
+    	<li><a href="/index.php/Home/Index/index"><img src="/Public/images/index_footerSY.png"/></a></li>
+    	<li><a href="/index.php/Home/Company/company"><img src="/Public/images/index_footerQY1.png"/></a></li>
+    	<li><a href="/index.php/Home/Release/resource"><img src="/Public/images/index_footerZYQ.png"/></a></li>
+    	<li class="caonima"><a href="/index.php/Home/News/news"><img src="/Public/images/index_footerXX.png"/></a></li>
+    	<li class="caonima"><a href="/index.php/Home/Person/person"><img src="/Public/images/index_footerWD.png"/></a></li>
+    </ul>   
+</div>
+<!--菜单页-->
+<!--<div class="menu_list">
+    <div class="head">
+        <a class="close" href="javascript:;"><img src="/Public/images/index_classify_gb.png"/></a>
+        龙子网
+    </div> 
+</div>-->
+<!--列表-->
+<div class="column">
+    <div class="inner">
+       <!--  <ul class="clear">  
+                <li class="headlines clear">
+                    <a href="javascript:;">
+                        <div class="l_box clear">
+                            <h1>富士康郑州园区</h1><span class="time">10.12</span>
+                            <div class="types">
+                            	<span>寒假工</span>
+                            	<span>3000-5000元</span>
+                            </div>
+                            <div class="pruduct">
+                               
+                                <div class="comment">
+                                 
+                                    <span>定金</span>
+                                    <span>￥200</span>
+                                </div>
+                                <div class="good">
+                                    <img src="/Public/images/index_dianzan.png">
+                                    <span>河南省郑州市</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="r_box clear">
+                            <img src="/Public/images/index_pic01.png">
+                        </div>
+                        <div class="user clear">
+                        	<span>加班费</span><span>管食费</span><span>过年福利</span><span>龙子网报名专项1000+奖学金</span>
+                        </div>
+                    </a>
+                </li>
+           
+        </ul> -->
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+        var page = 0;      
+        var target=true;
+        $.ajax({
+            url:"companyinfo",
+            type:"POST",
+            data:{
+                
+                page:0
+            },
+            success:function (data) {
+                console.log(data);
+                var html = "";
+                for(var i=0; i<data.length; i++){
+                    var time = data[i].time.substring(0,10)
+                   
+                       html+= "<ul class='clear'>"+
+                           "<li class='headlines clear'>"+
+                               "<a href='/index.php/Home/Company/companyxq?cid="+data[i].cuid+"'>"+
+                                   "<div class='l_box clear'>"+
+                                     "<h1>"+data[i].title+"</h1>"+
+                                     "<div class='types'>"+
+                                        "<span>"+data[i].classify+"</span>"+
+                                        "<span>"+data[i].wage+"元</span>"+
+                                     "</div>"+
+                                      
+                                      "<div class='pruduct'>"+
+                                          "<div class='comment'>"+
+                                                "<span>定金:</span>"+
+                                                "<span>￥"+data[i].earnest+"</span>"+
+                                          "</div>"+
+                                          "<div class='good'>"+
+                                                 "<img src='/Public/images/ZYQ-weizhi.png'>"+
+                                                 "<span>"+data[i].town+"</span>"+
+                                          "</div>"+
+                                      "</div>"+
+                                   "</div>"+
+                                    "<div class='r_box clear'>"+
+                                         "<img src='/Public/images/company/"+data[i].image+"'>"+
+                                    "</div>"+
+                                    "<div class='user clear'>"+
+                                         "<span>"+data[i].treatment[0]+"</span>"+
+                                         "<span>"+data[i].treatment[1]+"</span>"+
+                                         "<span>"+data[i].treatment[2]+"</span>"+
+                                         // "<span>"+data[i].treatment[3]+"</span>"+
+                                    "</div>"+
+                               "</a>"+
+                           "</li>"+
+                          "</ul>"
+                }
+                $(".column>div").html(html)
+            }
+        });
+        $(document).scroll(function(){
+            var top = $(document).scrollTop();
+            var wintop = $(window).height();
+            var docHeight=$(document).height();
+            if(docHeight-top<=wintop){
+                console.log(name,page);
+                if(target){
+                    page ++;
+                    console.log(name,page);
+                    $.ajax({
+                        url:"companyinfo",
+                        type:"POST",
+                        async: false,
+                        data:{
+                            // name:name,
+                            page:page
+                        },
+                        success:function(data){
+                            console.log(data);
+                            if(data == ""){
+                                target=false;
+                                return
+                            }else{
+                                target = true;
+                                var html ="";
+                                for(var i=0; i<data.length; i++){
+                                    var time = data[i].time.substring(0,10)
+                            
+                             html+= "<ul class='clear'>"+
+                                       "<li class='headlines clear'>"+
+                                           "<a href='/index.php/Home/Company/companyxq?cid="+data[i].cuid+"'>"+
+                                               "<div class='l_box clear'>"+
+                                                 "<h1>"+data[i].title+"</h1>"+
+                                                 "<div class='types'>"+
+                                                    "<span>"+data[i].classify+"</span>"+
+                                                    "<span>"+data[i].wage+"元</span>"+
+                                                 "</div>"+
+                                                  
+                                                  "<div class='pruduct'>"+
+                                                      "<div class='comment'>"+
+                                                            "<span>定金:</span>"+
+                                                            "<span>￥"+data[i].earnest+"</span>"+
+                                                      "</div>"+
+                                                      "<div class='good'>"+
+                                                             "<img src='/Public/images/ZYQ-weizhi.png'>"+
+                                                             "<span>"+data[i].address+"</span>"+
+                                                      "</div>"+
+                                                  "</div>"+
+                                               "</div>"+
+                                                "<div class='r_box clear'>"+
+                                                     "<img src='/Public/images/index_pic01.png'>"+
+                                                "</div>"+
+                                                "<div class='user clear'>"+
+                                                     "<span>"+data[i].treatment[0]+"</span>"+
+                                                     "<span>"+data[i].treatment[1]+"</span>"+
+                                                     "<span>"+data[i].treatment[2]+"</span>"+
+                                                     // "<span>"+data[i].treatment[3]+"</span>"+
+                                                "</div>"+
+                                           "</a>"+
+                                       "</li>"+
+                          "</ul>"
+                    }
+                   $(".column>div").append(html)
+                            }
+                        }
+                    })
+                }
+            }
+        });
+</script>
+<script>
+    var sessionss = $("#sessionss").text();
+    // alert(sessionss)
+    $(".caonima").click(function(event) {
+        
+       if ($("#sessionss").text() == "") {
+          // alert("请先登录")
+          $(".caonima a").attr("href","/index.php/Home/Login/index"); 
+       };
+    });
+</script>
+</body>
+</html>

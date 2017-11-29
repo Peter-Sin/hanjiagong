@@ -1,0 +1,88 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> 
+    <a href="#" class="tip-bottom" data-original-title="回到后台">
+    <i class="icon-home"></i> 后台</a> 
+    <a href="#" class="tip-bottom">助学金</a> 
+    <!-- <a href="#" class="current">添加活动</a>  -->
+  </div>
+  <!-- <h1>添加活动</h1> -->
+</div>
+
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+      <div class="widget-box">
+        <!-- <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>添加活动</h5>
+        </div> -->
+        <div class="widget-content nopadding">
+        <form action ="__MODULE__/huodong/insert" method="post" class="form-horizontal" enctype="multipart/form-data" >
+          <div class="control-group">
+            <label class="control-label">用户名</label>
+            <div class="controls controls-row">
+              <input type="text" readonly name="title" value="<{$list[0][username]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">助学金额度</label>
+            <div class="controls controls-row">
+              <input type="text" readonly name="price"  value="<{$list[0][amount]}>">
+            </div>
+          </div>
+
+        <div class="control-group">
+          <label class="control-label">状态</label>
+            <div class="controls">
+              <label>
+                <input type="radio" name="statu" value="0"/>
+                    待审核
+              </label>
+              <label>
+                <input type="radio" name="statu" value="1"/>
+                    已审核
+              </label>
+              <label>
+                <input type="radio" name="statu" value="3"/>
+                    无效
+              </label>
+            </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label"><h4>活动详情</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 0px;" >
+            <div class="widget-box">
+              <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>详情介绍</h5>
+              </div>
+                <!-- 加载编辑器的容器 -->
+                <script id="container" name="xiangqing" type="text/plain"></script>
+                <!-- 配置文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <!-- 编辑器源码文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <!-- 实例化编辑器 -->
+                <script type="text/javascript">
+                    var ue = UE.getEditor('container');
+                </script>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-success" style="margin:0px 0px 0px 0px">添加</button>
+          <button type="reset" class="btn btn-success"style="margin:0px 0px 0px 30px">重置</button>
+        </div>
+    </div>
+  </div>
+  </form>
+  </div>
+</div>
+</div>
+</block>

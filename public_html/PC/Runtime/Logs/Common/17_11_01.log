@@ -1,0 +1,120 @@
+[ 2017-11-01T00:03:07+08:00 ] 140.205.225.198 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T00:03:08+08:00 ] 140.205.225.198 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T07:52:26+08:00 ] 140.205.225.190 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T07:52:28+08:00 ] 140.205.225.190 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T15:07:24+08:00 ] 140.205.201.43 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T15:07:25+08:00 ] 140.205.201.43 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T18:37:12+08:00 ] 140.205.225.186 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T18:37:30+08:00 ] 140.205.225.203 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T18:37:30+08:00 ] 140.205.225.203 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T18:38:14+08:00 ] 140.205.225.203 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T18:38:14+08:00 ] 140.205.225.203 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T18:39:02+08:00 ] 140.205.225.186 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T19:32:19+08:00 ] 140.205.225.203 /index.php?g=Wap&m=Dining&a=ShowDetail&id=2%20and%20updatexml(1,concat(0x7e,md5(1),0x7e),0)%23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:Dining
+
+[ 2017-11-01T19:32:23+08:00 ] 140.205.225.203 /index.php?g=Wap&m=Dining&a=ShowDetail&id=2%20and%20updatexml(1,concat(0x7e,md5(1),0x7e),0)%23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Dining
+
+[ 2017-11-01T19:58:07+08:00 ] 140.205.225.203 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T19:58:07+08:00 ] 140.205.225.203 /index.php?m=wap&a=index&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: 无法加载模块:Wap
+
+[ 2017-11-01T20:02:32+08:00 ] 140.205.225.203 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T20:02:32+08:00 ] 140.205.225.203 /index.php?m=member&c=index&a=register&siteid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+ERR: 无法加载模块:Member
+
+[ 2017-11-01T20:36:36+08:00 ] 140.205.225.203 /index.php?g=Wap&m=Dining&a=ShowDetail&id=2%20and%20updatexml(1,concat(0x7e,md5(1),0x7e),0)%23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载模块:Dining
+
+[ 2017-11-01T20:36:37+08:00 ] 140.205.225.203 /index.php?g=Wap&m=Dining&a=ShowDetail&id=2%20and%20updatexml(1,concat(0x7e,md5(1),0x7e),0)%23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Dining
+

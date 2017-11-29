@@ -1,0 +1,100 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="回到后台"><i class="icon-home"></i> 活动管理</a> <a href="#" class="tip-bottom">活动编辑</a> <a href="#" class="current">活动编辑</a> </div>
+<!--   <h1>活动编辑</h1> -->
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <a href="__URL__/index"><h4>返回上一级</h4></a>
+        </div>
+        <div class="widget-content nopadding">
+          <form action ="__MODULE__/Company/update" method="post" class="form-horizontal" enctype="multipart/form-data" >
+            <div class="control-group">
+              <label class="control-label">企业名称</label>
+              <div class="controls controls-row">
+                <input type="text" name="title" value="<{$list[0][title]}>">
+                <input type="hidden" name="id" value="<{$list[0][id]}>">
+              </div>
+            </div>
+
+          <div class="control-group">
+            <label class="control-label">类别</label>
+            <div class="controls controls-row">
+              <input type="text" name="classify" value="<{$list[0][classify]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">工资</label>
+            <div class="controls controls-row">
+              <input type="text" name="money" value="<{$list[0][wage]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="town" value="<{$list[0][town]}>">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">详细地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="address" value="<{$list[0][address]}>">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">定金</label>
+            <div class="controls controls-row">
+              <input type="text" name="dingjin" value="<{$list[0][earnest]}>">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">招聘人数</label>
+            <div class="controls controls-row">
+              <input type="text" name="total" value="<{$list[0][total]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">电话</label>
+            <div class="controls controls-row">
+              <input type="text" name="tel" value="<{$list[0][tel]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">QQ</label>
+            <div class="controls controls-row">
+              <input type="text" name="qq" value="<{$list[0][qq]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+          <label class="control-label">待遇</label>
+            <div class="controls">
+              <foreach name="list1" item="val">
+                  <label>
+                      <input type="checkbox" name="daiyu[]" value="<{$val.id}>"/><{$val.title}>
+                  </label>
+              </foreach>
+            </div>
+        </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success" style="margin:0px 0px 0px 200px">确定</button>
+               <button type="reset" class="btn btn-success"style="margin:0px 0px 0px 30px">重置</button>
+         </div> 
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</block>

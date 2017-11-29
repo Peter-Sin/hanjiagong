@@ -1,0 +1,22 @@
+body{background: #fafafa;}
+.walletxq{width: 100%;border-top: 1px solid #e7e7e7;margin-top: 1rem;border-bottom: 1px solid #e7e7e7;background: #fff;}
+.walletxq .dzje{padding-left: 1rem;}
+.dzje span:nth-child(1){font-size: 1.05rem;color: #999;}
+.dzje span:nth-child(2){font-size: 1.8rem;color: #494949;float: right;margin-right: 1rem;}
+.dzje span{margin-top: 1.5rem;display: inline-block;}
+.daozhang{border-bottom: 1px solid #e7e7e7;height: 5.05rem;}
+.dzbz{padding-left: 1rem;}
+.dzbz .beizhu span{display: inline-block;}
+.dzbz .beizhu span:nth-child(1){float: left;}
+.dzbz .beizhu span:nth-child(2){width: 19rem;line-height: 1.5rem;}
+.dzbz div span:nth-child(1){font-size: 1.05rem;color: #999;}
+.dzbz div span:nth-child(2){font-size: 1.05rem;color: #494949;margin-left: 2rem;}
+.dzbz div{margin-top: 1.8rem;margin-bottom: 2rem;}
+.dzbz .qbzh{margin-bottom: 1.8rem;}
+.dzbz .qbzh span:nth-child(2){margin-left: 1rem;}
+
+.walletxq2{width: 100%;border-top: 1px solid #e7e7e7;margin-top: 1rem;border-bottom: 1px solid #e7e7e7;background: #fff;}
+.walletxq2 .dzje{padding-left: 1rem;}
+
+.walletxq3{width: 100%;border-top: 1px solid #e7e7e7;margin-top: 1rem;border-bottom: 1px solid #e7e7e7;background: #fff;}
+.walletxq3 .dzje{padding-left: 1rem;}

@@ -1,0 +1,71 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> 
+    <a href="#" class="tip-bottom" data-original-title="回到后台">
+    <i class="icon-home"></i> 后台</a> 
+    <a href="#" class="tip-bottom">企业/公司</a> 
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid"><{$list['title']}>
+      <div class="widget-box">
+      <form action ="__MODULE__/Company/updatecontent" method="post" class="form-horizontal" enctype="multipart/form-data" >
+      <div class="control-group">
+          <label class="control-label">分类</label>
+          <input type="hidden" name="id" value="<{$list.id}>">
+            <div class="controls">
+              <label>
+                  <input type="radio" name="style" value="1"/>薪资福利
+              </label>
+              <label>
+                  <input type="radio" name="style" value="2"/>招聘要求
+              </label>
+              <label>
+                  <input type="radio" name="style" value="3"/>企业介绍
+              </label>
+              <label>
+                  <input type="radio" name="style" value="4"/>其他说明
+              </label>
+              <label>
+                  <input type="radio" name="style" value="5"/>招聘岗位
+              </label>
+            </div>
+      </div>
+
+        <div class="control-group">
+          <label class="control-label"><h4>填充内容</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 100px;" >
+            <div class="widget-box">
+              <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>添加内容</h5>
+              </div>
+                <!-- 加载编辑器的容器 -->
+                <script id="container" name="content" type="text/plain"></script>
+                <!-- 配置文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <!-- 编辑器源码文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <!-- 实例化编辑器 -->
+                <script type="text/javascript">
+                    var ue = UE.getEditor('container');
+                </script>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-success" style="margin:0px 0px 0px 0px">添加</button>
+          <button type="reset" class="btn btn-success"style="margin:0px 0px 0px 30px">重置</button>
+        </div>
+    </div>
+  </div>
+  </form>
+  </div>
+</div>
+</div>
+</block>

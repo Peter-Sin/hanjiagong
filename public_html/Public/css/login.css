@@ -1,0 +1,230 @@
+.error {
+  width: 21.5rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  background: #000;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0.5;
+  text-align: center;
+  position: absolute;
+  left: 12.2%;
+  top: 9rem;
+  display: none;
+}
+.login {
+  background: url("../images/bgpick.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+.login > div {
+  margin: 0 0 0 1.5rem;
+  float: left;
+}
+.login .register{
+ /* margin-top: 25%;*/
+}
+.login img {
+  width: 1.7rem;
+  height: 1.75rem;
+  float: left;
+  margin: 0.6rem 1rem 0;
+}
+.login input {
+  width: 17.5rem;
+  height: 100%;
+  float: left;
+  padding-left: 0.75rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+.login .user,
+.login .password,
+.login .password2,
+.login .phone{
+  width: 23rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border: 1px solid #e7e7e7;
+  margin: 0.5rem;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.login .yz_code {
+  width: 23rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border: 1px solid #e7e7e7;
+  margin: 0.5rem;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.login .yz_code input {
+  width: 9.5rem;
+}
+.login .yz_code button {
+  display: block;
+  float: right;
+  height: 100%;
+  margin-right: 1rem;
+  color: #53B436;
+  border: none;
+  outline: none;
+  background: #fff;
+}
+.login .register p {
+  font-size: 0.8rem;
+  color: #999;
+  margin: 1.25rem 0 1.5rem 0.25rem;
+  width: 23rem;
+}
+.login .register p a {
+  color: #ff9911;
+}
+.login .go {
+  margin-top:1rem;
+  text-align: center;
+}
+.login .go button {
+  width: 23rem;
+  height: 2.8rem;
+  background: #53B436;
+  color: #fff;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-left: 0.5rem;
+}
+.login .go a {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+.login .getpassword .go {
+  margin-top: 3.05rem;
+}
+.login .product {
+  width: 23rem;
+  margin: 1rem 0 0 0.5rem;
+}
+.login .product a {
+  display: block;
+  font-size: 1rem;
+  color: #999;
+}
+.login .product .forget {
+  float: left;
+}
+.login .product .yzm_login {
+  float: right;
+}
+.login .product .zm_login {
+  float: right;
+}
+.login .product .target {
+  float: right;
+}
+.login .product .usernamelogin {
+  float: right;
+}
+
+/**滑块**/
+#slider,#slider_2 {
+  margin-left:0.5rem;
+  width: 23rem;
+  height: 2.8rem;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slider_bg,#slider_bg_2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #7AC23C;
+  z-index: 1;
+}
+
+#label,#label_2 {
+  width: 46px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  line-height:100%;
+  border: 1px solid #cccccc;
+  background: #ccc;
+  z-index: 3;
+  cursor: move;
+  color: #ff9e77;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#labelTip,#labelTip_2 {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height:280%;
+  text-align: center;
+  z-index: 2;
+  border-radius: 5px;
+  color: #666;
+}
+.other{
+  width: 35%;
+  text-align: center;
+  margin: 1rem auto 0;
+}
+.other a{
+  display: block;
+  float: left;
+  margin: 0 2.5rem;
+}
+.other img{
+  width: 3.5rem;
+  height: 3.5rem;
+  float: none;
+  margin: 0;
+  display: inline-block;
+}
+.other span{
+  display: block;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.zh_login_other {
+    clear: both;
+    text-align: center;
+    height: 0.75rem;
+    margin-top: 5rem;
+}
+.zh_login_other span {
+    font-size: 1.05rem;
+    color: #999;
+    width: 8rem;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    float: left;
+}
+.zh_login_other span:nth-child(2) {
+    border: none;
+    line-height: 2px;
+}
+.login_title{width: 13rem;margin: auto;}
+.login_title img{width: 13rem;height: 2.1rem;margin-top: 2.65rem;margin-bottom: 3.6rem;margin-left: 5.5rem;}

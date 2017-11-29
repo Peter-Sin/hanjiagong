@@ -1,0 +1,53 @@
+body {
+  background: #efefef;
+}
+li {
+  background: #fff;
+}
+.index_header {
+  background: #fff;
+  color: #f54343;
+}
+.literature .literature_box p {
+  font-weight: normal;
+}
+.tab {
+  width: 100%;
+  margin-top: 0.075rem;
+}
+.tab ul {
+  padding: 0 0.75rem;
+  background: #fff;
+  border-bottom: 1px solid #f54343;
+}
+.tab li {
+  width: 16.667%;
+  height: 2.425rem;
+  line-height: 2.425rem;
+  float: left;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.tab li a {
+  display: inline-block;
+  width: 1.75rem;
+  height: 2.25rem;
+  color: #666666;
+  border-bottom: 2px solid #fff;
+}
+.tab li .active {
+  border-bottom: 2px solid #f54343;
+  color: #f54343;
+}
+.tab :nth-child(6) {
+  margin: 0;
+}
+.literature .pruduct .act {
+  background: #f54343;
+}
+.literature .pruduct div img {
+  width: 1rem;
+}
+.list li {
+  margin-top: 0.475rem;
+}

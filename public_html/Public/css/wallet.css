@@ -1,0 +1,69 @@
+body{background: #fafafa;}
+.fun {
+  width: 100%;
+}
+.fun .margin {
+  margin-top: 1rem;
+}
+.fun a {
+  display: block;
+  width: 100%;
+ /* height: 3.5rem;*/
+  line-height: 3.5rem;
+  background: #fff;
+  color: #494949;
+  font-size: 1.05rem;
+}
+.fun a div {
+  display: inline-block;
+  position: relative;
+}
+.fun a div p {
+  display: none;
+  /*display: inline-block;*/
+  position: absolute;
+  right: -6rem;
+  top: -0.5rem;
+  color: #bebebe;
+  font-size: 0.6rem;
+}
+.fun a div p i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #ff9911;
+  margin: 0 0.5rem;
+}
+.fun a div p span {
+  float: none;
+  margin: 0;
+  font-size: 0.6rem;
+}
+.fun img {
+  width: 1.35rem;
+  height: 1.2rem;
+  margin: 1.15rem 0.75rem 0 1.5rem;
+  float: left;
+}
+.fun span {
+  float: right;
+  font-size: 1rem;
+  color: #d5d5d5;
+}
+.fun span img{width: 0.7rem;height: 1.2rem;margin-top: 1.25rem;margin-right: 1.2rem;}
+.fun .margin a span{color: #6ec056;}
+.gonggao{padding-left: 1.5rem;padding-right: 1rem;}
+.gonggao a{line-height:1.6rem;background: #FAFAFA;padding-top: 0.6rem;padding-bottom: 0.6rem;}
+.gonggao a span{float: none;font-size: 0.8rem;color: #666;}
+.gonggao a span:nth-child(2){color: #6ec056;}
+
+.walletmx{width: 100%;background: #6EC056;height: 6.6rem;margin-top: 1rem;color: #fff;}
+.walletmx p{font-size: 1.2rem;padding-top: 1rem;margin-left: 1.5rem;}
+.walletmx .money span:nth-child(1){font-size: 1.9rem;height: 2.1rem;}
+.walletmx .money span:nth-child(2){width: 5.35rem;height: 1.35rem;border: 1px solid #fff;line-height: 1.35rem;text-align: center;font-size: 0.9rem;display: inline-block;border-radius: 0.15rem;float: right;margin-top: 0.5rem;}
+.walletmx .money span:nth-child(2) a{color: #fff;}
+.walletmx .money{padding-left: 1.5rem;padding-right: 1rem;margin-top: 0.5rem;}
+
+.go .moneygo{width: 24rem;height: 2.75rem;background: #6EC056;margin: auto;text-align: center;line-height: 2.75rem;color: #fff;font-size: 1.3rem;border-radius: 0.25rem;}
+.go .moneygo a{color: #fff}

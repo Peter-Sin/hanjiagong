@@ -1,0 +1,964 @@
+[ 2017-08-02T08:39:25+08:00 ] 115.60.149.11 /index.php/Home/Topic/STlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+ERR: 非法操作:STlist
+
+[ 2017-08-02T08:39:38+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-08-02T08:39:39+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-08-02T08:39:49+08:00 ] 115.60.149.11 /index.php/Home/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `xinwen` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `xinwen` WHERE ( statu=1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 134 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 136 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 138 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-08-02T08:39:49+08:00 ] 115.60.149.11 /index.php/Home/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `xinwen` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `xinwen` WHERE ( statu=1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 134 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 136 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 138 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-08-02T08:39:52+08:00 ] 115.60.149.11 /index.php/Home/News/details?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `xinwen` [ RunTime:0.0020s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND statu=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `xinwen` WHERE ( id= AND statu=1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND statu=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `xinwen` WHERE ( id= AND statu=1 ) 
+
+[ 2017-08-02T08:39:55+08:00 ] 115.60.149.11 /index.php/Home/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `xinwen` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `xinwen` WHERE ( statu=1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 134 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 136 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 138 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/3e1db04e7083e697fef51415aa3aaf61.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-08-02T08:40:02+08:00 ] 115.60.149.11 /index.php/Home/Topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc LIMIT 10   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-08-02T08:40:18+08:00 ] 115.60.149.11 /index.php/Home/Literature/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `wenxue` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wenxue` WHERE ( statu=1 ) LIMIT 10   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-08-02T08:40:18+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T08:40:18+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T08:40:20+08:00 ] 115.60.149.11 /index.php/Home/Literature/details?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `wenxue` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wenxue` WHERE ( id=11 AND statu=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/91ad74ae3b286d6a75d25dab1b913d99.php 第 118 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/91ad74ae3b286d6a75d25dab1b913d99.php 第 119 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/91ad74ae3b286d6a75d25dab1b913d99.php 第 120 行.
+NOTIC: [8] Use of undefined constant contents - assumed 'contents' /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/91ad74ae3b286d6a75d25dab1b913d99.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-08-02T08:40:28+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T08:40:28+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T08:40:28+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js?tcdsp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T08:56:38+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-08-02T09:05:22+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-08-02T15:35:49+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-08-02T15:40:38+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-08-02T15:41:00+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-08-02T15:46:35+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2017-08-02T15:52:41+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-08-02T15:52:50+08:00 ] 115.60.149.11 /index.php/Home/PE/litera.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+ERR: 非法操作:litera
+
+[ 2017-08-02T15:52:52+08:00 ] 115.60.149.11 /index.php/Home/PE/litera.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+ERR: 非法操作:litera
+
+[ 2017-08-02T15:52:55+08:00 ] 115.60.149.11 /index.php/Home/PE/litera.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 非法操作:litera
+
+[ 2017-08-02T15:52:57+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-08-02T15:53:14+08:00 ] 115.60.149.11 /index.php/Home/PE/sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+ERR: 非法操作:sports
+
+[ 2017-08-02T15:53:16+08:00 ] 115.60.149.11 /index.php/Home/PE/sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+ERR: 非法操作:sports
+
+[ 2017-08-02T15:53:18+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-08-02T15:53:41+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-08-02T15:54:36+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-08-02T15:54:54+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-08-02T16:02:39+08:00 ] 115.60.149.11 /index.php/Home/PE/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-08-02T16:04:22+08:00 ] 115.60.149.11 /index.php/Home/PE/sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+ERR: 非法操作:sports
+
+[ 2017-08-02T16:04:27+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0023s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-08-02T16:04:35+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0087s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-08-02T16:06:36+08:00 ] 42.156.251.201 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-08-02T16:06:40+08:00 ] 42.156.251.201 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2017-08-02T16:06:56+08:00 ] 113.46.138.12 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-08-02T16:14:12+08:00 ] 115.60.149.11 /index.php/Home/Pay/dowxpay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载控制器:Pay
+
+[ 2017-08-02T16:20:45+08:00 ] 101.226.33.220 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0037s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-08-02T16:26:22+08:00 ] 115.60.149.11 /index.php/Home/Activity/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/2618447a8e475f55f6204d176ed7e80f.php 第 132 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/2618447a8e475f55f6204d176ed7e80f.php 第 135 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/2618447a8e475f55f6204d176ed7e80f.php 第 140 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/2618447a8e475f55f6204d176ed7e80f.php 第 143 行.
+NOTIC: [8] Undefined variable: val /www/web/longzi_cn/public_html/Wap/Runtime/Cache/Home/2618447a8e475f55f6204d176ed7e80f.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-08-02T16:26:22+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0020s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0095s ]
+
+[ 2017-08-02T16:26:34+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0020s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 10,10   [ RunTime:0.0130s ]
+
+[ 2017-08-02T16:26:47+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 20,10   [ RunTime:0.0131s ]
+
+[ 2017-08-02T16:27:02+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0021s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 30,10   [ RunTime:0.0109s ]
+SQL: SELECT * FROM `user` WHERE ( id=91 )  [ RunTime:0.0017s ]
+
+[ 2017-08-02T16:29:07+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0021s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 40,10   [ RunTime:0.0058s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+
+[ 2017-08-02T16:29:17+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0019s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 50,10   [ RunTime:0.0058s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0015s ]
+
+[ 2017-08-02T16:29:17+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0021s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 60,10   [ RunTime:0.0060s ]
+
+[ 2017-08-02T16:30:16+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0020s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='体育' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0028s ]
+
+[ 2017-08-02T16:30:17+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0019s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='文学' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0038s ]
+
+[ 2017-08-02T16:30:17+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='娱乐' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0089s ]
+
+[ 2017-08-02T16:30:18+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0022s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='公益' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0065s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0017s ]
+
+[ 2017-08-02T16:30:18+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0023s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='公益' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0068s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE ( id=87 )  [ RunTime:0.0015s ]
+
+[ 2017-08-02T16:30:19+08:00 ] 115.60.149.11 /index.php/Home/Activity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0020s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 AND act.act_fl='户外' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0051s ]
+
+[ 2017-08-02T16:30:23+08:00 ] 115.60.149.11 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `activities` [ RunTime:0.0024s ]
+SQL: SELECT act.*,img.img FROM `activities` `act`,`act_img` `img` WHERE ( act.id=img.act_id AND img.face=2 ) ORDER BY id desc LIMIT 6   [ RunTime:0.0101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-08-02T16:30:27+08:00 ] 115.60.149.11 /index.php/Home/Literature/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `wenxue` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wenxue` WHERE ( statu=1 ) LIMIT 10   [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-08-02T16:30:31+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-08-02T16:30:31+08:00 ] 115.60.149.11 /index.php/Home/js/swiper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载控制器:Js
+

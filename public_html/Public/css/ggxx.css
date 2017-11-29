@@ -1,0 +1,23 @@
+
+.gonggao{width: 100%;}
+.gonggao ul li{background: #fff;padding-left: 1.5rem;padding-right: 1.5rem;margin-top: 1rem;}
+.gonggao ul li:nth-child(1){margin-top: 0.5rem;}
+.gglines h1{font-size: 1.35rem;color: #494949;}
+.gglines .gg_title{height: 4rem;border-bottom: 1px solid #d7d7d7;padding-top: 0.8rem;}
+.gglines .ggfabu{margin-top: 0.5rem;}
+.gglines .ggfabu span:nth-child(1){font-size: 1rem;color: #FF9911;margin-right: 1.25rem;}
+.gglines .ggfabu span:nth-child(2){font-size: 1rem;color: #999;}
+.ggfabu .ggfabu_r{float: right;}
+.ggfabu .ggfabu_r img{width: 1.15rem;height: 0.6rem;}
+.ggfabu .ggfabu_r span{font-size: 0.9rem;}
+.ggfabu .ggfabu_r span:nth-child(1){margin-right: 0.25rem;}
+.gglines .ggxx{font-size: 1.2rem;color: #666;margin-top: 1rem;}
+.gglines .ggxx p{line-height: 1.8rem;text-indent:2em}
+
+
+/* 关于我们 */
+.about{width: 100%;}
+.about .about_title{text-align:center;height: 3rem;line-height: 3rem;}
+.about .about_title h1{font-size: 1.4rem;}
+.about .aboutxq p{line-height: 1.8rem;text-indent:2em;font-size: 1.1rem;color: #666;}
+.about .about_us{padding-left: 1.5rem;padding-right: 1.5rem;}

@@ -1,0 +1,12 @@
+[ 2017-07-24T13:42:29+08:00 ] 115.60.148.118 /index.php/Admin/Tuce/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-24T14:41:27+08:00 ] 115.60.148.118 /index.php/Admin/Tuce/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Admin
+

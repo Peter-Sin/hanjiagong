@@ -1,0 +1,474 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="/Public/css/style.css" rel="stylesheet">
+    <link href="/Public/css/index.css" rel="stylesheet">
+    <link href="/Public/css/login.css" rel="stylesheet">   
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/style.js"></script>
+    <script src="/Public/js/jquery.slideunlock.js"></script>
+    <title>龙子人力资源</title>
+</head>
+<body>
+<div class="box"></div>
+<div class="index_header">
+     <a href="javascript:history.go(-1);" class="left"><img src="/Public/images/XQY-fh.png"/></a>
+        登录注册
+     <a style="opacity: 0;" href="javascript:;" class="menu right"><img src="/Public/images/XQY-gd.png"/></a>
+</div>
+<div class="error">密码错误</div>
+<div class="login">
+	<div class="login_title">
+		<img src="/Public/images/renliziyuan.png"/>
+	</div>
+    <!--账号密码登录-->
+    <div class="zh_login">
+        <div class="user clear">
+            <img src="/Public/images/DL-yhm.png"/>
+            <input type="text" placeholder="请输入您的手机号">
+        </div>
+        <div class="password clear">
+            <img src="/Public/images/DL-mima.png"/>
+            <input type="password" placeholder="请输入您的密码">
+        </div>
+        <div id="slider">
+            <div id="slider_bg"></div>
+            <span id="label"></span> <span id="labelTip">拖动滑块验证</span>
+        </div>
+        <script>
+            var slider = new SliderUnlock("#slider",{
+                successLabelTip : "验证成功"
+            },function(){
+                yz = true
+            });
+            slider.init();
+        </script>
+        <div class="product clear">
+            <a class="forget" href="javascript:;">忘记密码?</a>
+            <a class="yzm_login" href="javascript:;">手机验证码登录</a>
+        </div>
+        <div class="go">
+            <button>登 录</button>
+            <a href="javascript:;">立即注册</a>
+        </div>
+        <div class="zh_login_other">
+                <span></span>
+                <span>使用第三方登录</span>
+                <span></span>
+            </div>
+        <div class="other clear">
+            <a href="/index.php/Home/login/qqlogin">
+                <img src="/Public/images/DL-qq.png"/>
+                <!--<span>QQ登录</span>-->
+            </a>
+            <!--<a href="/index.php/Home/login/wblogin">
+                <img src="/Public/Wap/images/user_10.png"/>
+                <span>微博登录</span>
+            </a>-->
+        </div>
+    </div>
+    <!--手机验证码登录-->
+    <div class="zh_login1" style="display: none;">
+        <div class="user clear">
+            <img src="/Public/images/DL-yhm.png"/>
+            <input type="text" placeholder="请输入您的手机号">
+        </div>
+        <div class="yz_code clear">
+            <img src="/Public/images/DL-yanzhengma.png"/>
+            <input type="number" placeholder="输入验证码">
+            <button>获取验证码</button>
+        </div>
+        <div class="product clear">
+            <a class="forget" href="javascript:;">忘记密码?</a>
+            <a class="zm_login" href="javascript:;">账号密码登录</a>
+        </div>
+        <div class="go">
+            <button>登 录</button>
+            <a href="javascript:;">立即注册</a>
+        </div>
+        <div class="zh_login_other">
+                <span></span>
+                <span>使用第三方登录</span>
+                <span></span>
+            </div>
+        <div class="other clear">
+            <a href="/index.php/Home/login/qqlogin">
+                <img src="/Public/images/DL-qq.png"/>
+                <!--<span>QQ登录</span>-->
+            </a>
+            <!--<a href="/index.php/Home/login/wblogin">
+                <img src="/Public/Wap/images/user_10.png"/>
+                <span>微博登录</span>
+            </a>-->
+        </div>
+    </div>
+    <!--注册-->
+    <div class="register" style="display: none">
+        <div class="phone clear">
+            <img src="/Public/images/DL-shouji.png"/>
+            <input type="text" placeholder="输入手机号">
+        </div>
+        
+        <div class="password clear">
+            <img src="/Public/images/DL-mima.png"/>
+            <input type="password" placeholder="设置密码">
+        </div>
+        <div class="password2 clear">
+            <img src="/Public/images/DL-mima.png"/>
+            <input type="password" placeholder="确认密码">
+        </div>
+        <div class="user clear">
+            <img src="/Public/images/DL-yhm.png"/>
+            <input type="text" placeholder="请输入用户名">
+        </div>
+        <div class="yz_code clear">
+            <img src="/Public/images/DL-yanzhengma.png"/>
+            <input type="number" placeholder="输入验证码">
+            <button>获取验证码</button>
+        </div>
+        <p style="font-size: 1rem;float: right;">已有账号?去<a class="denglu" href="#">登录</a></p>
+        <div class="go">
+            <button>注 册</button>
+        </div>
+        <p>点击『注册』按钮，即代表你同意<a href="javascript:;">《龙子网用户注册协议》</a></p>
+    </div>
+    <!--找回密码-->
+    <div class="getpassword" style="display: none">
+        <div class="user clear">
+            <img src="/Public/images/DL-shouji.png"/>
+            <input type="text" placeholder="输入手机号">
+        </div>
+        <div class="yz_code clear">
+            <img src="/Public/images/DL-yanzhengma.png"/>
+            <input type="number" id="code" placeholder="输入验证码">
+            <button>获取验证码</button>
+        </div>
+        <div class="password clear">
+            <img src="/Public/images/DL-mima.png"/>
+            <input type="password" placeholder="设置新密码">
+        </div>
+        <div class="go">
+            <button>确 定</button>
+        </div>
+    </div>
+</div>
+<script>
+    var yz = false;
+    var clock = ''; //定时器
+    var nums1 = 60; //注册
+    var nums2 = 60; //找回密码
+    var nums3 = 60; //验证码登录
+    var height = $(window).height();
+    var name = true;
+    //重置窗口高度
+    $(" body ").height(height);
+    $(".login").height($("body").height()-$(".box").height());
+//    滑动验证
+    function error(str) {
+        $(".error").text(str).show();
+        setTimeout(function(){
+            $(".error").hide()
+        },3000)
+    }
+//    点击忘记密码
+    $(".forget").click(function () {
+        $(this).parent().parent().hide();
+        $(".getpassword").show();
+    });
+//    点击手机验证码登录
+    $(".zm_login").click(function(){
+        $(this).parent().parent().hide();
+        $(".zh_login").show()
+    });
+    //    点击手机验证码登录
+    $(".yzm_login").click(function(){
+        $(this).parent().parent().hide();
+        $(".zh_login1").show()
+    });
+    $(".denglu").click(function(){
+        $(this).parent().parent().hide();
+        $(".zh_login1").show()
+    });
+    //点击快速注册
+    $(".go a").click(function () {
+        $(".go").parent().hide();
+        $(".register").show();
+    });
+    //账号密码登录
+    $(".zh_login .go button").click(function(){
+        if (yz==false){
+           error("未通过验证");
+           return
+        }else if($(".zh_login .user input").val() == ""){
+            error("请输入输入用户名");
+            zy = false;
+            var slider = new SliderUnlock("#slider",{
+                successLabelTip : "验证成功"
+            },function(){
+                yz = true
+            });
+            slider.init();
+            return
+        }else if($(".zh_login .password input").val() == ""){
+            error("请输入密码");
+            zy = false;
+            var slider = new SliderUnlock("#slider",{
+                successLabelTip : "验证成功"
+            },function(){
+                yz = true
+            });
+            slider.init();
+        }else{
+            $.ajax({
+                url:"login",
+                type:"POST",
+                data:{
+                    id:$(".zh_login .user input").val(),
+                    password:$(".zh_login .password input").val()
+                },
+                success:function(data){
+                    console.log(data);
+                    if(data == 0){
+                        error("账号密码错误请重新登录")
+                    }else if(data == 1){
+                        error("已登录,正在跳转...");
+                        setTimeout(location.href="/index.php/Home/Index/index",3000)
+                    }
+                }
+            })
+        }
+    });
+    //注册
+    //获取验证码
+    function doLoop1() {
+        nums1--;
+        if(nums1>0){
+            $(".register .yz_code button").text(nums1+'s后重新获取')
+        }else {
+            clearInterval(clock);
+            $(".register .yz_code button").attr("disabled",false).text("获取验证码");
+            nums1 = 60;
+        }
+    }
+    //验证用户名是否重复;
+    $(".register .user input").blur(function(){
+        var id =  $(".register .user input").val();
+        $.ajax({
+            url:"check_username",
+            type:"POST",
+            data:{
+                id:id
+            },
+            success:function(data){
+                if(data == 1){
+                    error("用户名已存在");
+                    name = false
+                }else {
+                    name = true
+                }
+            }
+        })
+    });
+    $(".register .yz_code button").click(function(){
+        var self = $(this);
+        if($(".register .phone input").val() == ""){
+            error("请输入手机号");
+            return
+        }else {
+            $.ajax({
+                url:"tel_verify",
+                type:"POST",
+                data:{
+                    phone:$(".register .phone input").val()
+                },
+                success:function(data){
+                    $(self).attr("disabled",true);
+                    $(self).text(nums1+"s后重新获取");
+                    clock = setInterval(doLoop1, 1000);
+                    console.log(data);
+                    if(data == 0){
+                        error("手机号码错误")
+                    }else if(data == 1){
+                        error("发送成功")
+                    }else if(data == 2){
+                        error("操作过于频繁")
+                    }else if(data == 3){
+                        error("该手机已被绑定")
+                    }
+                }
+            })
+        }
+    });
+    $(".register .go button").click(function(){
+
+        if($(".register .user input").val() == ""){
+            error("请设置用户名");
+            return
+        }else if($(".register .password input").val() == ""){
+            error("请设置密码");
+            return
+        }else if($(".register .password2 input").val() == ""){
+            error("请确认密码");
+            return
+        }else if($(".register .password input").val() != $(".register .password2 input").val()){
+            error("两次密码输入不一致");
+            return
+        }else if($(".register .yz_code input").val() == ""){
+            error("请输入验证码");
+            return
+        }else if(name == false){
+            error("用户名已存在");
+            return
+        }else {
+            $.ajax({
+                url:"register",
+                type:"POST",
+                data:{
+                    id:$(".register .user input").val(),
+                    password:$(".register .password input").val(),
+                    phone:$(".register .phone input").val(),
+                    code:$(".register .yz_code input").val()
+                },
+                success:function(data){
+                    if(data == 1){
+                        error("注册成功,即将跳转 ...");
+                        $(".register").hide();
+                        $(".zh_login").show();
+                    }else if(data == 0){
+                        error("注册失败")
+                    }else if(data == 10){
+                        error("验证码错误")
+                    }
+                }
+            })
+        }
+    });
+    //找回密码
+    //获取验证码
+    function doLoop2() {
+        nums2--;
+        if(nums2>0){
+            $(".getpassword .yz_code button").text(nums2+'s后重新获取')
+        }else {
+            clearInterval(clock);
+            $(".getpassword .yz_code button").attr("disabled",false).text("获取验证码");
+            nums2 = 60;
+        }
+    }
+    $(".getpassword .yz_code button").click(function(){
+        var self = $(this);
+        if($(".getpassword .user input").val() == ""){
+            error("请输入手机号")
+        }else {
+            $.ajax({
+                url:"get_tel_verify",
+                type:"POST",
+                data:{
+                    phone:$(".getpassword .user input").val()
+                },
+                success:function(data){
+                    $(self).attr("disabled",true);
+                    $(self).text(nums2+"s后重新获取");
+                    clock = setInterval(doLoop2, 1000);
+                    console.log(data)
+                    if(data == 1){
+                        error("发送成功");
+                    }else if(data == 2){
+                        error("操作过于频繁")
+                    }else if(data == 0){
+                        error("手机号码不正确")
+                    }
+                }
+            })
+        }
+    });
+    $(".getpassword .go").click(function () {
+        if($(".getpassword .user input").val() == ""){
+            error("请输入手机号");
+        }else if($(".getpassword .yz_code input").val() == ""){
+            error("请输入验证码");
+        }else{
+            $.ajax({
+                url:"editpassword",
+                type:"POST",
+                data:{
+                    phone:$(".getpassword .user input").val(),
+                    code:$(".getpassword .yz_code input").val(),
+                    password:$(".getpassword .password input").val()
+                },
+                success:function (data) {
+                    if(data == 10){
+                        error("验证码错误")
+                    }else if(data == 1){
+                        error("修改成功");
+                        window.location.reload();
+                    }else if(data == 2){
+                        error("修改失败")
+                    }
+                }
+            })
+        }
+    });
+    //验证码登录
+    function doLoop3() {
+        nums3--;
+        if(nums3>0){
+            $(".zh_login1 .yz_code button").text(nums3+'s后重新获取');
+        }else {
+            clearInterval(clock);
+            $(".zh_login1 .yz_code button").attr("disabled",false).text("获取验证码");
+            nums3 = 60;
+        }
+    }
+    $(".zh_login1 .yz_code button").click(function () {
+        var self = $(this);
+        if($(".zh_login1 .user input").val() == ""){
+            error("请输入手机号")
+        }else {
+            $.ajax({
+                url:"login_tel_verify",
+                type:"POST",
+                data:{
+                    phone:$(".zh_login1 .user input").val()
+                },
+                success:function(data){
+                    $(self).attr("disabled",true);
+                    $(self).text(nums3+"s后重新获取");
+                    clock = setInterval(doLoop3, 1000);
+                    if(data == 1){
+                        error("发送成功");
+                    }else if(data == 2){
+                        error("操作过于频繁");
+                    }else if(data == 0){
+                        error("手机号码不正确");
+                    }
+                }
+            });
+        }
+        $(".zh_login1 .go button").click(function () {
+            $.ajax({
+                url:"tel_login",
+                type:"POST",
+                data:{
+                    phone:$(".zh_login1 .user input").val(),
+                    code:$(".zh_login1 .yz_code input").val()
+                },
+                success:function (data) {
+                    if(data == 1){
+                        error("登录成功");
+                        window.location.href="/index.php/Home/Index/index";
+                    }else if(data == 10){
+                        error("验证码错误");
+                    }
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>

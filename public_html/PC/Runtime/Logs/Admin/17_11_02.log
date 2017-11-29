@@ -1,0 +1,253 @@
+[ 2017-11-02T16:19:21+08:00 ] 61.52.129.85 /index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-11-02T16:19:24+08:00 ] 61.52.129.85 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `manager` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `manager` WHERE ( username='135' AND password ='202cb962ac59075b964b07152d234b70' )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-11-02T16:19:25+08:00 ] 61.52.129.85 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-11-02T16:19:28+08:00 ] 61.52.129.85 /index.php/Admin/Grants/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `grants` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `grants` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: title /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 354 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 393 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 394 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 395 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 396 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-11-02T16:19:37+08:00 ] 61.52.129.85 /index.php/Admin/Grants/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `grants` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `grants` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: title /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 354 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 393 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 394 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 395 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 396 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-11-02T16:19:40+08:00 ] 61.52.129.85 /index.php/Admin/Grants/statu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `enroll` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `commission` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `grants` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `grants` SET `statu`='1' WHERE ( id=1 ) [ RunTime:0.0023s ]
+SQL: SELECT * FROM `enroll` WHERE `order` = '25feeb22085c4759191e5ff7531bb622' LIMIT 1   [ RunTime:0.0015s ]
+SQL: INSERT INTO `commission` (`recode`,`uid`,`cid`,`sign`,`amount`,`batch`,`order`,`time`) VALUES ('0nqgnd','3','1','1','150','2','25feeb22085c4759191e5ff7531bb622','2017-11-02 16:19:40') [ RunTime:0.0023s ]
+
+[ 2017-11-02T16:23:01+08:00 ] 61.52.129.85 /index.php/Admin/Grants/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `grants` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `grants` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: title /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 354 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 393 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 394 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 395 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 396 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-11-02T16:23:49+08:00 ] 61.52.129.85 /index.php/Admin/Grants/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `grants` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `grants` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: title /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 354 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 393 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 394 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 395 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 396 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-11-02T16:24:42+08:00 ] 61.52.129.85 /index.php/Admin/Grants/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `grants` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `grants` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./PC/Admin/View/Public/header.html): failed to open stream: No such file or directory /www/web/renli/public_html/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: title /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 354 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 393 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 394 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 395 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 396 行.
+NOTIC: [8] Undefined variable: vale /www/web/renli/public_html/PC/Runtime/Cache/Admin/a2df3116183f1d5ada71fd53aa7dc46b.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-11-02T16:24:45+08:00 ] 61.52.129.85 /index.php/Admin/Grants/statu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `grants` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `enroll` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `commission` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `grants` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `grants` SET `statu`='1' WHERE ( id=1 ) [ RunTime:0.0024s ]
+SQL: SELECT * FROM `enroll` WHERE `order` = '25feeb22085c4759191e5ff7531bb622' LIMIT 1   [ RunTime:0.0016s ]
+SQL: INSERT INTO `commission` (`recode`,`uid`,`cid`,`sign`,`amount`,`batch`,`order`,`time`) VALUES ('0nqgnd','3','1','1','150','2','25feeb22085c4759191e5ff7531bb622','2017-11-02 16:24:45') [ RunTime:0.0022s ]
+

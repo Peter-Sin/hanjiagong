@@ -1,0 +1,115 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="回到后台"><i class="icon-home"></i> 资源管理</a> <a href="#" class="tip-bottom">编辑</a> <a href="#" class="current">活动编辑</a> </div>
+  <h1>编辑</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <a href="__URL__/index"><h4>返回上一级</h4></a>
+        </div>
+        <div class="widget-content nopadding">
+          <form action ="__MODULE__/Release/update" method="post" class="form-horizontal" enctype="multipart/form-data" >
+          
+           <div class="control-group">
+            <label class="control-label">标题</label>
+            <div class="controls controls-row">
+              <input type="hidden" name="id" value="<{$list[0][id]}>">
+              <input type="text" name="title" value="<{$list[0][title]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+          <label class="control-label">结算方式</label>
+            <div class="controls">
+                  <label><input type="radio" name="type" value="日结"/>日结<br/></label>
+                  <label><input type="radio" name="type" value="周结"/>周结<br/></label>
+                  <label><input type="radio" name="type" value="月结"/>月结<br/></label>
+                  <label><input type="radio" name="type" value="完工结"/>完工结<br/></label>
+            </div>
+        </div>
+
+          <div class="control-group">
+            <label class="control-label">工资</label>
+            <div class="controls controls-row">
+              <input type="text" name="money" value="<{$list[0][money]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="town" value="<{$list[0][town]}>">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">详细地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="address" value="<{$list[0][address]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">开始时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="begin" value="<{$list[0][begin_time]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">结束时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="end" value="<{$list[0][end_time]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">关闭时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="close" value="<{$list[0][close_time]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">招聘人数</label>
+            <div class="controls controls-row">
+              <input type="text" name="total" value="<{$list[0][total]}>">
+            </div>
+          </div>
+
+          
+
+          <div class="control-group">
+            <label class="control-label">联系人</label>
+            <div class="controls controls-row">
+              <input type="text" name="contacts" value="<{$list[0][contacts]}>">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">电话</label>
+            <div class="controls controls-row">
+              <input type="text" name="tel" value="<{$list[0][tel]}>">
+            </div>
+          </div>
+
+
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success" style="margin:0px 0px 0px 200px">确定</button>
+               <button type="reset" class="btn btn-success"style="margin:0px 0px 0px 30px">重置</button>
+         </div> 
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</block>

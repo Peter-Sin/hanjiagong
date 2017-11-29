@@ -1,0 +1,148 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> 
+    <a href="#" class="tip-bottom" data-original-title="回到后台">
+    <i class="icon-home"></i> 后台</a> 
+    <a href="#" class="tip-bottom">资源圈</a> 
+    <!-- <a href="#" class="current">添加活动</a>  -->
+  </div>
+  <!-- <h1>添加活动</h1> -->
+</div>
+
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+      <div class="widget-box">
+        <!-- <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>添加活动</h5>
+        </div> -->
+        <div class="widget-content nopadding">
+        <form action ="__MODULE__/Release/insert" method="post" class="form-horizontal" enctype="multipart/form-data" >
+          <div class="control-group">
+            <label class="control-label">标题</label>
+            <div class="controls controls-row">
+              <input type="text" name="title">
+            </div>
+          </div>
+
+          <!-- <div class="control-group">
+            <label class="control-label">类别</label>
+            <div class="controls controls-row">
+              <input type="text" name="classify">
+            </div>
+          </div>
+ -->
+          <div class="control-group">
+          <label class="control-label">结算方式</label>
+            <div class="controls">
+                  <label><input type="radio" name="type" value="日结"/>日结<br/></label>
+                  <label><input type="radio" name="type" value="周结"/>周结<br/></label>
+                  <label><input type="radio" name="type" value="月结"/>月结<br/></label>
+                  <label><input type="radio" name="type" value="完工结"/>完工结<br/></label>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">工资</label>
+            <div class="controls controls-row">
+              <input type="text" name="money">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="town">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">详细地址</label>
+            <div class="controls controls-row">
+              <input type="text" name="address">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">开始时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="begin">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">结束时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="end">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">关闭时间</label>
+            <div class="controls controls-row">
+              <input type="datetime-local" name="close">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">招聘人数</label>
+            <div class="controls controls-row">
+              <input type="text" name="total">
+            </div>
+          </div>
+
+          
+
+          <div class="control-group">
+            <label class="control-label">联系人</label>
+            <div class="controls controls-row">
+              <input type="text" name="contacts">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">电话</label>
+            <div class="controls controls-row">
+              <input type="text" name="tel">
+            </div>
+          </div>
+
+          <!-- <div class="control-group">
+          <label class="control-label">待遇</label>
+            <div class="controls">
+              <foreach name="list" item="val">
+                  <label>
+                      <input type="checkbox" name="daiyu[]" value="<{$val.id}>"/><{$val.title}>
+                  </label>
+              </foreach>
+            </div>
+        </div> -->
+
+       <!--  <div class="control-group">
+          <label class="control-label"><h4>活动详情</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 100px;" >
+            <div class="widget-box">
+              <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>详情介绍</h5>
+              </div>
+                <script id="container" name="contnet1" type="text/plain"></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <script type="text/javascript">
+                    var ue = UE.getEditor('container');
+                </script>
+            </div>
+          </div> 
+        </div> -->
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-success" style="margin:0px 0px 0px 0px">添加</button>
+          <button type="reset" class="btn btn-success" style="margin:0px 0px 0px 30px">重置</button>
+        </div>
+  </form>
+  </div>
+</div>
+</div>
+</block>

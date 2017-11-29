@@ -1,0 +1,58 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="回到后台"><i class="icon-home"></i>后台</a> <a href="#" class="current">报名者信息</a> </div>
+    <h1>报名者信息</h1>
+  </div>
+  <div class="container-fluid style="TEXT-ALIGN:center;"">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+      <h1><{$act}></h1>
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>共有<{$tot}>人</h5>
+          </div>
+            <form action="__MODULE__/Huodong/bmer/id/<{$list[0][hd_id]}>" method="get">
+          <div class="widget-content nopadding">
+          <div style="height:50px;">
+          <div style="float:left; margin:12px 0px 0px 30px;font:18px 微软雅黑;">搜索:</div>
+            <input type="text" name="username" style="width:160px; margin:10px 0px 0px 5px;float:left;" value="<{$Think.get.username}>">
+            
+             
+            <div style="float:left; margin:0px 0px 0px 30px;font:18px 微软雅黑;">
+          <input type="submit" value="查询" style="width:60px; margin:10px 0px 0px 0px;">
+            </div>
+               </from>
+                <a href="__MODULE__/Good/add/"><div style="float:right; font:18px 微软雅黑; margin:12px 50px 0px 0px;"></div></a>
+           </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>姓名</th>
+                  <th>电话</th>
+                  <th>时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                <foreach name="list" item="vo">
+                <tr class="gradeC">
+                   <td style="text-align:center;"><{$vo.id}></td>
+                  <td style="text-align:center;"><{$vo.name}></td>
+                  <td style="text-align:center;"><{$vo.phone}></td>
+                  <td style="text-align:center;"><{$vo.bmtime}></td>                 
+                </tr>
+              </foreach>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <{$pageinfo}>
+    </div>
+  </div>
+</div>
+</block>

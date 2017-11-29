@@ -1,0 +1,128 @@
+<extend name="Layout/menu"/>
+<block name="content">
+
+<!--sidebar-menu-->
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="回到后台"><i class="icon-home"></i> 企业详情</a> <a href="#" class="tip-bottom">企业详情</a> <a href="#" class="current">企业详情</a> </div>
+  <h1>企业详情</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <a href="__URL__/index"><h4>返回上一级</h4></a>
+        </div>
+        <div class="widget-content nopadding">
+          <form action ="__MODULE__/Good/xinq/id/<{$list[0][id]}>" method="post" class="form-horizontal" enctype="multipart/form-data" >
+            <div class="control-group">
+              <label class="control-label">企业名称</label>
+              <div class="controls controls-row">
+                <input type="text" placeholder="" name="name" value="<{$list[0][title]}>">
+              </div>
+            </div>
+            
+
+            <div class="control-group">
+              <label class="control-label">类型</label>
+              <div class="controls controls-row">
+                <input type="text" name="price" value="<{$list[0][classify]}>">  
+              </div>
+            </div>
+
+              <div class="control-group">
+                <label class="control-label">工资</label>
+                <div class="controls controls-row">
+                  <input type="text" name="acttime" value="<{$list[0][wage]}>"> 
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">地址</label>
+                <div class="controls controls-row">
+                  <input type="text" name="deadline" value="<{$list[0][town]}><{$list[0][address]}>"> 
+                </div>
+              </div>
+
+            <div class="control-group">
+              <label class="control-label">招聘人数</label>
+              <div class="controls controls-row">
+                <input type="text" name="address" value="<{$list[0][total]}>"> 
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">联系电话</label>
+              <div class="controls controls-row">
+                <input type="text" name="zanzhushang" value="<{$list[0][tel]}>">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">QQ</label>
+              <div class="controls controls-row">
+                <input type="text" name="total" value="<{$list[0][qq]}>">
+              </div>
+            </div>
+
+
+       <!--  <div class="control-group">
+          <label class="control-label"><h4>企业介绍</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 100px;" >
+          <div class="widget-box">
+            <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+              <h5>企业介绍</h5>
+            </div>
+                <script id="container3">3<{$list[0][content3]}></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <script type="text/javascript">
+                    var ue3 = UE.getEditor('container3');
+                </script>
+          </div>
+          </div> 
+        </div>
+
+        <div class="control-group">
+          <label class="control-label"><h4>其他说明</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 100px;" >
+          <div class="widget-box">
+            <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+              <h5>其他说明</h5>
+            </div>
+                <script id="container4">4<{$list[0][content4]}></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <script type="text/javascript">
+                    var ue4 = UE.getEditor('container4');
+                </script>
+          </div>
+          </div> 
+        </div>
+
+        <div class="control-group">
+          <label class="control-label"><h4>招聘岗位</h4></label>
+          <div class="row-fluid" style="width:968px;  margin:0px 20px 0px 100px;" >
+          <div class="widget-box">
+            <div class="widget-title" style="margin:0px 0px 0px 0px;"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+              <h5>招聘岗位</h5>
+            </div>
+                <script id="container5" >5<{$list[0][content5]}></script>
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>             
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>             
+                <script type="text/javascript">
+                    var ue5 = UE.getEditor('container5');
+                </script>
+          </div>
+          </div> 
+        </div>  -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div></div>
+</block>

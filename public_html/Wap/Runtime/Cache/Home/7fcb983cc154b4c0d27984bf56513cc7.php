@@ -1,0 +1,239 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="/Public/css/style.css" rel="stylesheet">
+    <link href="/Public/css/index.css" rel="stylesheet">
+    <link href="/Public/css/walletmx.css" rel="stylesheet">   
+    <link href="/Public/css/mobiscroll.css" rel="stylesheet"/>
+    <link href="/Public/css/mobiscroll_date.css" rel="stylesheet"/>
+    <link href="/Public/css/jquery-weui.min.css" rel="stylesheet"/>
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/style.js"></script>
+    <script src="/Public/js/mobiscroll_date.js" charset="gb2312"></script>
+    <script src="/Public/js/mobiscroll.js"></script>
+    <script src="/Public/js/jquery-weui.min.js"></script>
+    <script src="/Public/js/city-picker.min.js"></script>
+    <title>龙子人力资源</title>
+</head>
+<body>
+<div class="box"></div>
+<div class="index_header">
+    <a href="javascript:history.go(-1);" class="left"><img src="/Public/images/XQY-fh.png"/></a>
+实名认证
+    <a href="javascript:;" class="menu right"><img src="/Public/images/XQY-gd.png"/></a>
+</div>
+<!--菜单页-->
+<div class="menu_list">
+    <div class="list_l">
+        <ul class="clear">
+            <li>
+                <a href="/index.php/Home/Index/index">                    
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Company/company">                    
+                    <span>企业</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Release/resource">                    
+                    <span>资源圈</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/Home/News/news">                   
+                    <span>消息</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Person/person">                    
+                    <span>我的</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<!-- 已认证 -->
+<div class="yirenzheng" style="display:none">
+    <div class="yesrenzheng">
+        <span>认证状态</span>
+        <span>已认证</span>
+    </div>
+</div>
+<!-- 未认证 -->
+<div class="weirenzheng" style="display:none">
+    <div class="norenzheng">
+        <span>认证状态</span>
+        <span>您还未认证，赶快填写认证吧!</span>
+    </div>
+</div>
+ <div id="lll" style="display:none"><?php echo ($cre_num); ?></div>
+<!--实名认证-->
+<div class="certification">
+    <form class="form" enctype="multipart/form-data">
+		<div class="user">
+			<span>用户名</span>
+			<input type="text" name="user" value="<?php echo ($list["username"]); ?>" placeholder="请填写您的用户名">
+		</div>
+		<div class="name">
+			<span>姓名</span>
+			<input type="text" name="name" placeholder="请填写您的真实姓名">
+		</div>
+		<div class="phone">
+			<span>手机号</span>
+			<input type="text" name="phone" value="<?php echo ($list["tel"]); ?>" placeholder="请填写您的手机号(支付宝账号)">
+		</div>
+		<div class="sex">
+			<span>性别</span>
+			<input type="radio" name="sex" value="1" /> 男
+	        <input style="margin-left:1.2rem;" type="radio" name="sex" value="2" /> 女
+		</div>
+		<!-- 时间插件 -->
+		<div class="birthday">
+			<span>生日</span>
+			<input type="text" name="birthday" id="USER_AGE" class="input" placeholder="请选择日期>>">
+		</div>
+		<script>
+        $(function () {
+            var currYear = (new Date()).getFullYear();
+            var opt={};
+            opt.date = {preset : 'date'};
+            opt.datetime = {preset : 'datetime'};
+            opt.time = {preset : 'time'};
+            opt.default = {
+                theme: 'android-ics light', //皮肤样式
+                display: 'modal', //显示方式
+                mode: 'scroller', //日期选择模式
+                dateFormat: 'yyyy-mm-dd',
+                lang: 'zh',
+                showNow: false,
+                nowText: "今天",
+                startYear: currYear - 47, //开始年份
+                endYear: currYear + 10 //结束年份
+            };
+            $("#USER_AGE").mobiscroll($.extend(opt['date'], opt['default']));
+        });
+    </script>
+        
+        <!-- 家庭地址 -->
+		<div class="home">
+			<span>家乡</span>
+			<input type="text" name="home" id="city" placeholder="请选择>>">
+		</div>
+		<script>
+        $("#city").cityPicker({
+	            title: "请选择家乡地址"
+	        });
+        </script>
+		<div class="address">
+			<span>详细地址</span>
+			<input type="text" name="address" placeholder="请输入详细地址">
+		</div>
+		<div class="school">
+			<span>学校</span>
+			<input type="text" name="school" placeholder="请输入您的学校">
+		</div>
+		<div class="major">
+			<span>专业</span>
+			<input type="text" name="major" placeholder="请输入您的专业">
+		</div>
+		<div class="jinjiphone">
+			<span>紧急联系人</span>
+			<input type="text" name="jinjiphone" placeholder="请输入紧急联系人手机号">
+		</div>
+		<div class="idcard">
+			<span>身份证号</span>
+			<input type="text" name="idcard" placeholder="仅用于购买保险和确认身份">
+		</div>
+		<div class="zhuyi">
+			<p>*请确认您填写的个人信息，一旦提交认证不可修改。</p>
+		</div>
+		<div class="go">
+			<p>提交认证</p>
+		</div>
+	</form>	
+</div>
+<!-- 提交 -->
+<script>
+    $(".go").click(function () {
+        var phone =/^1[0-9]{10}$/;
+        if($(".user input").val() == ""){
+            alert("请填写用户名");
+            return false
+        }else if($(".name input").val() == ""){
+            alert("请填写姓名");
+            return false
+        }else if($(".phone input").val() == ""){
+            alert("请填写电话号码");
+            return false
+        }else if ($("input[name='sex']").val() == "") {
+            alert("请选择性别");
+            return false
+        }else if($(".birthday input").val() == ""){
+            alert("请填写生日");
+            return false
+        }else if($(".home input").val() == ""){
+            alert("请填写地点");
+            return false
+        }else if($(".address input").val() == ""){
+            alert("请填写详细地址");
+            return false
+        }else if($(".school input").val() == ""){
+            alert("请填写学校");
+            return false
+        }else if($(".major input").val() == ""){
+            alert("请填写专业");
+            return false
+        }else if($(".jinjiphone input").val() == ""){
+            alert("请填写紧急人联系方式");
+            return false
+        }else if($(".idcard input").val() == ""){
+            alert("请填写正确的身份证号");
+            return false
+        }else if(!phone.test($(".phone input").val())){
+            alert("请填写正确的联系方式");
+            return false
+        }else {
+            var formData = new FormData($(".form")[0]);
+            $.ajax({
+                url: "certify",
+                type: "POST",
+                data: formData,
+                contentType: false, //必须false才会避开jQuery对 formdata 的默认处理 XMLHttpRequest会对 formdata 进行正确的处理
+                processData: false, //必须false才会自动加上正确的Content-Type
+                success: function (data) {
+                    if (data == 1) {
+                    	alert("认证成功");
+                    	$(".certification").hide();
+	                    $(".yirenzheng").show();
+	                    location.href="/index.php/Home/Person/index"
+                    }else if(data == 0){
+                        alert("认证失败")
+                    }else if(data == 11){
+                        alert("证件号已注册")
+                    }else if(data == 12){
+                        alert("证件号有误")
+                    }
+                }
+            });
+        }
+    })
+</script>
+ <script>
+    var jkl = $('#lll').text();
+    if (jkl == 0) {
+       $('.weirenzheng').show();      
+    }else if(jkl == 1){
+       $('.yirenzheng').show();
+       $('.certification').hide();
+    }
+</script>
+</body>
+</html>

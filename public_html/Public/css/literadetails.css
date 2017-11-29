@@ -1,0 +1,181 @@
+.index_header {
+  background: #fff;
+  color: #c9b76e;
+}
+body {
+  background: #fcf5ed;
+}
+.content .title {
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+  padding: 0.875rem 0;
+}
+.content .title h1 {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  margin-bottom: 1.75rem;
+}
+.content .title div {
+  float: left;
+}
+.content .title .time {
+  width: 7.5rem;
+  text-align: right;
+  color: #999;
+  font-size: 0.7rem;
+}
+.content .title .people {
+  width: 8.25rem;
+  text-align: right;
+  color: #999;
+  font-size: 0.7rem;
+}
+.content .title .look {
+  width: 7.5rem;
+}
+.content .title .look img {
+  float: right;
+  width: 0.675rem;
+  height: 0.45rem;
+  margin: 0.35rem 0.675rem 0 0;
+}
+.content .title .look span {
+  float: right;
+  color: #999;
+  font-size: 0.7rem;
+}
+.content .text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.75rem 0;
+}
+.bot_menu {
+  width: 100%;
+  height: 2.45rem;
+  line-height: 2.45rem;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.bot_menu li {
+  float: left;
+  width: 25%;
+  color: #999;
+}
+.bot_menu li img {
+  float: left;
+  margin: 0.65rem 0 0 1.875rem;
+}
+.bot_menu li span {
+  float: left;
+  margin-left: 0.325rem;
+  font-size: 0.7rem;
+}
+.bot_menu .active {
+  color: #fff;
+  background: #c9b76e;
+}
+.bot_menu .fenxiang img {
+  width: 1.125rem;
+  height: 1rem;
+}
+.bot_menu .pinglun img {
+  width: 1.25rem;
+  height: 1.075rem;
+}
+.bot_menu .fabu img {
+  width: 1.375rem;
+  height: 1.175rem;
+}
+.bot_menu .baoming img {
+  width: 1.2rem;
+  height: 1.1rem;
+}
+.tab ul {
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+.tab li {
+  float: left;
+  width: 4rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  color: #333;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+.tab .active {
+  border-bottom: 1px solid #c9b76e;
+}
+.pinglun ul {
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+.pinglun li {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+.pinglun li .user_head {
+  width: 12%;
+  height: 100%;
+  float: left;
+}
+.pinglun li .user_head img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1.15rem 0 0 0.55rem;
+}
+.pinglun li .content {
+  width: 88%;
+  padding: 1rem 0;
+  float: right;
+}
+.pinglun li .content .time {
+  color: #999;
+  font-size: 0.7rem;
+}
+.pinglun li .content p {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 0.875rem 0;
+  padding-right: 1.25rem;
+}
+.pinglun li .content p .ms {
+  color: #c9b76e;
+}
+.pinglun li .content .bot {
+  color: #999;
+  font-size: 0.7rem;
+}
+.pinglun li .content .bot img {
+  float: left;
+  margin-top: 0.2rem;
+}
+.pinglun li .content .bot .like {
+  float: left;
+}
+.pinglun li .content .bot .like img {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.pinglun li .content .bot .message {
+  float: left;
+  margin-left: 2.625rem;
+}
+.pinglun li .content .bot .message img {
+  width: 0.625rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}

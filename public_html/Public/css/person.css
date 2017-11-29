@@ -1,0 +1,111 @@
+body{background: #fafafa;}
+.index_header {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 1.4rem;
+  color: #494949;
+  text-align: center;
+  z-index: 999;
+  border-bottom: 1px solid #e7e7e7;
+}
+.index_footer{width: 100%;height: 3.657rem;position: fixed;bottom: 0;left: 0; z-index: 999;border-top: 1px solid #e7e7e7;background-color: #fff;text-align: center;}
+.index_footer ul li{float: left;width: 20%;margin-top: 0.5rem;}
+.index_footer ul li a img{width: 3rem;height: 3rem;}
+
+.column {
+  background: #fafafa;
+  margin-top: 0.65rem;
+}
+.column li {
+  margin-top: 0.4rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.column .person{width: 100%;}
+.column .person a{
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  line-height: 6.5rem;
+  background: #fff;
+  color: #666;
+  font-size: 1.2rem;
+}
+.column .person a img{float: left;width: 4rem;height: 4rem;margin-left: 1.5rem;margin-top: 1.2rem;margin-right: 1.2rem;}
+.column .person a div{ display: inline-block;line-height: 1.8rem;margin-top: 1.5rem;}
+.column .person a div p:nth-child(1){font-size: 1.25rem;color: #333;}
+.column .person a div p:nth-child(2){font-size: 1rem;color: #666;}
+.column .person a span{float: right;color: #d5d5d5;}
+.column .person a span img{width: 0.7rem;height: 1.2rem;margin-right: 1.2rem;margin-top: 2.7rem;}
+
+.column .money{width: 100%;height: 7.5rem;background: #fff;margin-top: 0.5rem;}
+.column .money li{float: left;width: 33.1%;margin-top: 1.25rem;}
+.column .money li:nth-child(2){border-left: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;}
+.column .money li a{display: block;color: #333;text-align: center;}
+.column .money li a img{width: 6rem;height: 4rem;}
+.column .money li:nth-child(1) a p{color: #FF9911;font-size: 0.9rem;}
+.column .money li:nth-child(2) a p{color: #FF9911;font-size: 0.9rem;}
+.column .money li:nth-child(3) a p{font-size: 0.75rem;color: #666;}
+
+.fun {
+  width: 100%;
+}
+.fun .margin {
+  margin-top: 0.5rem;
+}
+.fun a {
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background: #fff;
+  color: #454545;
+  font-size: 1.2rem;
+}
+.fun a div {
+  display: inline-block;
+  position: relative;
+}
+.fun a div p {
+  display: none;
+  /*display: inline-block;*/
+  position: absolute;
+  right: -6rem;
+  top: -0.5rem;
+  color: #bebebe;
+  font-size: 0.6rem;
+}
+.fun a div p i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #ff9911;
+  margin: 0 0.5rem;
+}
+.fun a div p span {
+  float: none;
+  margin: 0;
+  font-size: 0.6rem;
+}
+.fun img {
+ width: 2.075rem;
+    height: 1.95rem;
+    margin: 0.8rem 1rem 0 1.5rem;
+    float: left;
+}
+.fun span {
+  float: right;
+  font-size: 1rem;
+  color: #d5d5d5;
+}
+.fun span img{width: 0.7rem;height: 1.2rem;margin-top: 1.25rem;margin-right: 1.2rem;}
+
+
+/*消息*/
